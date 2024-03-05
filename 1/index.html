@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+        <img src="/1/add.png">
+        <h1>Mari</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="add">Add Friend</button>
+            
+        </div>
+    </div>
+  
+</body>
+<script>
+  var istatus = document.querySelector("h5")
+ var btn = document.querySelector('#add')
+
+ var check = 0
+
+
+  btn.addEventListener("click", function(){
+    if(check == 0){
+    istatus.innerHTML = "Friends"
+    istatus.style.color ="green"
+    console.log("hello hulhulhul")
+    btn.innerHTML="Remove friend"
+    check = 1
+    }
+    else{
+    istatus.innerHTML = "Stranger"
+    istatus.style.color ="red"
+    console.log("haiyaaa")
+    btn.innerHTML="Add Friend"
+    check = 0
+    }
+
+  })
+
+  
+</script>
+</html>

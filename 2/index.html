@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta heart btn</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="container">
+        <img src="/2/gil.png">
+        <i class="ri-heart-fill"></i>
+    </div>
+</body>
+
+<script>
+  var con = document.querySelector("#container")
+  var love = document.querySelector("i")
+
+  con.addEventListener("dblclick",function(){
+    love.style.transform = 'translate(-50% , -50%) scale(1)'
+    love.style.opacity = 0.8
+    love.style.color= "red";
+    console.log("hello")
+
+    setTimeout(function(){
+      love.style.opacity = 0;
+     
+    },1000);
+    setTimeout(function(){
+        love.style.transform = 'translate(-50% , -50%) scale(0)';
+        
+    },2000);
+  });
+
+
+</script>
+</html>
